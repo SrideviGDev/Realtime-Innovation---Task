@@ -1,0 +1,107 @@
+
+
+.datepicker-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  min-height: 100vh; 
+}
+
+main {
+  flex-grow: 1; /* This makes the main content (form) grow and fill the available space */
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.responsive-form {
+  display: flex;
+  flex-direction: column;
+    // justify-content: space-between; /* Pushes the footer (buttons) to the bottom */
+}
+
+.date-input {
+  width: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.disabled {
+  border: none;
+  color: #cccccc;
+  cursor: not-allowed;
+}
+
+.icon_color {
+  color: #1DA1F2 !important;
+}
+
+
+.primary_btn{
+  color: white !important;
+  background-color: #1DA1F2 !important;
+}
+
+.secondary_btn {
+  color: #1DA1F2 !important;
+}
+
+
+/* Media query for small screens (mobile phones) */
+@media (max-width: 600px) {
+  .container {
+      padding: 8px;
+  }
+
+  .header {
+      margin-bottom: 16px;
+  }
+
+  .arrow {
+      display: none;
+  }
+
+  .date-input {
+      width: 100%;
+  }
+
+  .footer {
+      flex-direction: column;
+      gap: 16px;
+  }
+
+  button {
+      width: 100%;
+  }
+}
+
+/* Media query for tablets */
+@media (min-width: 600px) and (max-width: 960px) {
+  .container {
+      padding: 12px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
